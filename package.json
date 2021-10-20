@@ -25,6 +25,7 @@
     "node": ">= 14"
   },
   "files": [
+    "index.js",
     "bin/"
   ]
 }
