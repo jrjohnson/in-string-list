@@ -1,0 +1,30 @@
+{
+  "name": "in-string-list",
+  "version": "0.0.0",
+  "description": "Check if a string is in a list of strings.",
+  "exports": "./index.js",
+  "type": "module",
+  "bin": {
+    "in-string-list": "bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrjohnson/in-string-list.git"
+  },
+  "keywords": [],
+  "author": "Jon Johnson <jon.johnson@ucsf.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrjohnson/in-string-list/issues"
+  },
+  "homepage": "https://github.com/jrjohnson/in-string-list#readme",
+  "dependencies": {
+    "meow": "^10.1.1"
+  },
+  "engines": {
+    "node": ">= 14"
+  },
+  "files": [
+    "bin/"
+  ]
+}
