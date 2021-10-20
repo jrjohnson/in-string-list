@@ -27,7 +27,7 @@ console.log(inList);
 
 ## API
 
-### inList(needle, haystack, separator)
+### inStringList(needle, haystack, ?separator)
 
 Type: `bool`
 
