@@ -1,6 +1,6 @@
 {
   "name": "in-string-list",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Check if a string is in a list of strings.",
   "exports": "./index.js",
   "type": "module",
