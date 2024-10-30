@@ -23,7 +23,7 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
-    "meow": "^10.1.1"
+    "meow": "^13.2.0"
   },
   "engines": {
     "node": ">= 18",
