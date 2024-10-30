@@ -22,7 +22,7 @@
     "meow": "^10.1.1"
   },
   "engines": {
-    "node": ">= 14"
+    "node": ">= 18"
   },
   "files": [
     "index.js",
