@@ -2,7 +2,8 @@
 import meow from 'meow';
 import inStringList from '../index.js';
 
-const cli = meow(`
+const cli = meow(
+  `
 	Usage
 	  $ in-string-list needle haystack <separator>
 
@@ -15,14 +16,16 @@ const cli = meow(`
 
 		$ in-string-list 'patch' 'majorxxminor' 'xx'
 		exits with 1
-`, {
-	importMeta: import.meta,
-});
+`,
+  {
+    importMeta: import.meta,
+  },
+);
 
-const [ needle, haystack, separator ] = cli.input;
+const [needle, haystack, separator] = cli.input;
 
 const rhett = inStringList(needle, haystack, separator);
 if (rhett) {
-    process.exit(0);
+  process.exit(0);
 }
 process.exit(1);
