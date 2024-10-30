@@ -18,11 +18,17 @@
     "url": "https://github.com/jrjohnson/in-string-list/issues"
   },
   "homepage": "https://github.com/jrjohnson/in-string-list#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx only-allow pnpm"
+  },
   "dependencies": {
     "meow": "^10.1.1"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 18",
+    "yarn": "use pnpm",
+    "npm": "use pnpm"
   },
   "files": [
     "index.js",
