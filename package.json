@@ -18,14 +18,31 @@
     "url": "https://github.com/jrjohnson/in-string-list/issues"
   },
   "homepage": "https://github.com/jrjohnson/in-string-list#readme",
+  "scripts": {
+    "test": "mocha tests/",
+    "lint": "eslint . --cache",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky"
+  },
   "dependencies": {
-    "meow": "^10.1.1"
+    "meow": "^13.2.0"
   },
   "engines": {
-    "node": ">= 14"
+    "node": ">= 18",
+    "yarn": "use pnpm",
+    "npm": "use pnpm"
   },
   "files": [
     "index.js",
     "bin/"
-  ]
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.11.0",
+    "husky": "^9.1.6",
+    "mocha": "^10.8.1",
+    "prettier": "3.3.3"
+  }
 }

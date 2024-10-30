@@ -1,7 +1,9 @@
 # in-string-list
->Check if a string is in a list of strings.
+
+> Check if a string is in a list of strings.
 
 ## Why?
+
 I needed something to validate in the workflow-dispatch input to a Github Action
 
 ## Install
@@ -24,7 +26,6 @@ console.log(inList);
 //=> false
 ```
 
-
 ## API
 
 ### inStringList(needle, haystack, ?separator)
@@ -32,7 +33,6 @@ console.log(inList);
 Type: `bool`
 
 Check if a string is in a list of strings seperated by a token.
-
 
 ## CLI
 
