@@ -20,7 +20,9 @@
   "homepage": "https://github.com/jrjohnson/in-string-list#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npx only-allow pnpm"
+    "lint": "eslint . --cache",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky"
   },
   "dependencies": {
     "meow": "^13.2.0"
@@ -39,6 +41,7 @@
     "eslint": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
     "globals": "^15.11.0",
+    "husky": "^9.1.6",
     "prettier": "3.3.3"
   }
 }
