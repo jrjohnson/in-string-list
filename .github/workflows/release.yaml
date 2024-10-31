@@ -1,10 +1,20 @@
-name: Publish NPM Package
+name: Release and Publish
 
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - '*'
 
 jobs:
+  notes:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ncipollo/release-action@v1
+        with:
+          generateReleaseNotes: true
   publish-npm:
     runs-on: ubuntu-latest
     steps:
